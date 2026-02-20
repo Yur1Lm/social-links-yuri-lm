@@ -1,0 +1,82 @@
+/* Import da fonte */
+@import url('https://fonts.googleapis.com/css2?family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Libertinus Sans", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: linear-gradient(
+    to bottom right,
+    #3affde 0%,
+    #5b99df 40%,
+    #9f6b9f 60%,
+    #ff34d2
+  );
+  background-size: 200% 200%;
+  animation: float 6s linear infinite alternate;
+}
+
+@keyframes float {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+section {
+  padding: 45px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  width: 320px;
+}
+
+header img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 4px solid #5b99df;
+}
+
+header h3 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+header p {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Links como botões */
+main a {
+  display: block;
+  text-decoration: none;
+  background: linear-gradient(to right, #3affde, #ff34d2);
+  color: white;
+  padding: 12px;
+  border-radius: 8px;
+  margin: 10px 0;
+  font-weight: bold;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Efeito hover moderno */
+main a:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
